@@ -1,10 +1,11 @@
 import Carousel from "../components/Carousel";
 import ContactMe from "../components/ContactMe";
+import { Link } from "react-router-dom"
 
 
 export default function Home(){
     return(
-        <div className="home">
+        <div className="home main-container">
             <div className="top">
                 <div className="full">
                     <h1>Juan Miguel Dela Cruz</h1>
@@ -34,7 +35,7 @@ export default function Home(){
                             </div>
                         </div>
                         <div className="full">
-                            <button>More About Me</button>
+                            <Link to="/about-me"><button>More About Me</button></Link>
                         </div>
                     </div>
                 </section>
