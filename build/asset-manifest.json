@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/JMDC_Portfolio/static/css/main.88d427bf.css",
-    "main.js": "/JMDC_Portfolio/static/js/main.7b3a36d3.js",
+    "main.css": "/JMDC_Portfolio/static/css/main.07df5446.css",
+    "main.js": "/JMDC_Portfolio/static/js/main.270faa93.js",
     "static/media/sample_1080_1920.jpg": "/JMDC_Portfolio/static/media/sample_1080_1920.69df3929c887fc6c79d2.jpg",
     "index.html": "/JMDC_Portfolio/index.html",
-    "main.88d427bf.css.map": "/JMDC_Portfolio/static/css/main.88d427bf.css.map",
-    "main.7b3a36d3.js.map": "/JMDC_Portfolio/static/js/main.7b3a36d3.js.map"
+    "main.07df5446.css.map": "/JMDC_Portfolio/static/css/main.07df5446.css.map",
+    "main.270faa93.js.map": "/JMDC_Portfolio/static/js/main.270faa93.js.map"
   },
   "entrypoints": [
-    "static/css/main.88d427bf.css",
-    "static/js/main.7b3a36d3.js"
+    "static/css/main.07df5446.css",
+    "static/js/main.270faa93.js"
   ]
 }
