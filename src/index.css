@@ -196,6 +196,43 @@ h2{
   min-height: 350px;
 }
 
+.about-me .full{
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me button{
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  height: 50px;
+  width: 25%;
+  border-radius: 1000000px;
+  border: 1px solid rgb(133, 133, 133);
+  background-image: linear-gradient(to bottom right, #343434, #1e1e1e);
+}
+
+.about-me button:hover{
+  cursor: pointer;
+  color: white;
+  border: 1px outset rgb(184, 184, 184);
+  background-image: linear-gradient(to bottom right, #494949, #292929);
+  box-shadow: 2px 2px 5px #6c6c6c;
+}
+
+.about-me button:active{
+  cursor: pointer;
+  color: white;
+  border: 1px inset rgb(184, 184, 184);
+  background-image: linear-gradient(to bottom right, #292929, #494949,);
+  box-shadow: 0px 0px 5px #6c6c6c;
+  transform: translateY(2px);
+}
+
+
+
 .left img{
   width: 50%;
   min-width: 100px;
@@ -279,6 +316,8 @@ p{
 .txt-center{
   text-align: center;
 }
+
+/* Form/Contact Me */
 
 .input-container{
   display: block;
@@ -426,4 +465,36 @@ label{
 
 .carousel-dot.active{
   color: white;
+}
+
+/* Footer */
+
+.footer{
+  display: block;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(#101010, #1c1c1c);
+  box-shadow: -1px 0px 5px #868a8b;
+}
+
+.footer .contacts{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.contacts img{
+  display: flex;
+  height: 95%;
+  margin: 0px 10px;
+}
+
+.footer p{
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  text-shadow: 1px 1px #989898;
 }

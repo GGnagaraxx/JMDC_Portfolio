@@ -14,7 +14,7 @@ export default function Home(){
             </div>
             <div className="body">
                 <section>
-                    <div className="container">
+                    <div className="container about-me">
                         <h2>About Me</h2>
                         <div className="left">
                             <img src="https://picsum.photos/300/300" alt=""/>
@@ -29,6 +29,12 @@ export default function Home(){
                             <div className="capsule-l">
                                 <p>Fast Learner</p>
                             </div>
+                            <div className="capsule-r">
+                                <p>Analytical</p>
+                            </div>
+                        </div>
+                        <div className="full">
+                            <button>More About Me</button>
                         </div>
                     </div>
                 </section>
