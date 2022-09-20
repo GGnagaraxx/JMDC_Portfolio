@@ -7,8 +7,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route path="/JMDC_Portfolio/" element={<Layout/>}>
           <Route index element={<Home/>}/>
+          <Route path="about-me" element={<NoPage/>}/>
+          <Route path="projects" element={<NoPage/>}/>
+          <Route path="contact-me" element={<NoPage/>}/>
           <Route path="*" element={<NoPage/>}/>
 
         </Route>
