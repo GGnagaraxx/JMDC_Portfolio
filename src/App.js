@@ -1,22 +1,22 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import Home from './pages/Home'
-import Layout from './pages/Layout';
 import NoPage from './pages/NoPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+      <Navbar/>
       <Routes>
-        <Route path="/JMDC_Portfolio/" element={<Layout/>}>
-          <Route index element={<Home/>}/>
-          <Route path="about-me" element={<NoPage/>}/>
-          <Route path="projects" element={<NoPage/>}/>
-          <Route path="contact-me" element={<NoPage/>}/>
-          <Route path="*" element={<NoPage/>}/>
-
-        </Route>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about-me" element={<NoPage/>}/>
+        <Route path="/projects" element={<NoPage/>}/>
+        <Route path="/contact-me" element={<NoPage/>}/>
+        <Route path="*" element={<NoPage/>}/>
       </Routes>
-    </BrowserRouter>
+      <Footer/>
+    </>
   );
 }
 
