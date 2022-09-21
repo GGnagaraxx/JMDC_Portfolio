@@ -44,6 +44,7 @@ export default function Carousel(){
 
     return(
         <div className="carousel">
+            <h2 className="carousel-title">{currentItem.title}</h2>
             <div className="carousel-main">
                 <button 
                     className="btn-left" 
@@ -55,7 +56,6 @@ export default function Carousel(){
                     name="next"
                     onClick={handleControls}> &#62; </button>
             </div>
-            <h2 className="carousel-title">{currentItem.title}</h2>
             <div className="carousel-dots">
                 {
                     items.map((item, i) => {

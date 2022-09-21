@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/JMDC_Portfolio/static/css/main.07df5446.css",
-    "main.js": "/JMDC_Portfolio/static/js/main.270faa93.js",
+    "main.css": "/JMDC_Portfolio/static/css/main.28c0a1b6.css",
+    "main.js": "/JMDC_Portfolio/static/js/main.3837bad5.js",
+    "static/media/CodeBackground.jpg": "/JMDC_Portfolio/static/media/CodeBackground.78e70ddb9753fce7c016.jpg",
+    "static/media/Formal.png": "/JMDC_Portfolio/static/media/Formal.bd1038d7d0ad20e03b8f.png",
+    "static/media/GioDev_Logo.png": "/JMDC_Portfolio/static/media/GioDev_Logo.c36ad29e1b28ed7c1865.png",
     "static/media/sample_1080_1920.jpg": "/JMDC_Portfolio/static/media/sample_1080_1920.69df3929c887fc6c79d2.jpg",
     "index.html": "/JMDC_Portfolio/index.html",
-    "main.07df5446.css.map": "/JMDC_Portfolio/static/css/main.07df5446.css.map",
-    "main.270faa93.js.map": "/JMDC_Portfolio/static/js/main.270faa93.js.map"
+    "main.28c0a1b6.css.map": "/JMDC_Portfolio/static/css/main.28c0a1b6.css.map",
+    "main.3837bad5.js.map": "/JMDC_Portfolio/static/js/main.3837bad5.js.map"
   },
   "entrypoints": [
-    "static/css/main.07df5446.css",
-    "static/js/main.270faa93.js"
+    "static/css/main.28c0a1b6.css",
+    "static/js/main.3837bad5.js"
   ]
 }

@@ -1,15 +1,35 @@
 import { Link } from "react-router-dom"
-import sample_logo from '../assets/images/sample_logo.png'
+import { useLocation } from "react-router-dom";
+import GioDev_Logo from '../assets/images/GioDev_Logo.png'
 
 export default function Navbar(){
+
+    const loc = useLocation();
+
     return(
         <div className="navbar">
-            <img className="logo" src={sample_logo} alt=""></img>
+            <img className="logo" src={GioDev_Logo} alt=""></img>
             <div className="nav">
-                <Link to="/" className="nav-item">Home</Link>
-                <Link to="/about-me" className="nav-item">About</Link>
-                <Link to="/projects" className="nav-item">Projects</Link>
-                <Link to="/contact-me" className="nav-item">Contact</Link>
+                <Link 
+                    to="/" 
+                    className={"nav-item "+(loc.pathname == "/" ? "active" : "")}>
+                    Home
+                </Link>
+                <Link 
+                    to="/about-me" 
+                    className={"nav-item "+(loc.pathname == "/about-me" ? "active" : "")}>
+                    About
+                </Link>
+                <Link 
+                    to="/projects" 
+                    className={"nav-item "+(loc.pathname == "/projects" ? "active" : "")}>
+                    Projects
+                </Link>
+                <Link 
+                    to="/contact-me" 
+                    className={"nav-item "+(loc.pathname == "/contact-me" ? "active" : "")}>
+                    Contact
+                </Link>
             </div>
         </div>
     );
