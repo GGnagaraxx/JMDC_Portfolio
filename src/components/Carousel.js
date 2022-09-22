@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {projects} from './Projects';
+import { Link } from 'react-router-dom';
 
 export default function Carousel(){
 
@@ -66,6 +67,11 @@ export default function Carousel(){
                         }
                     })
                 }
+            </div>
+            <div className="full">
+                <Link to={"/projects/"+currentItem.id}>
+                    <button>More Info</button>
+                </Link>
             </div>
         </div>
     )

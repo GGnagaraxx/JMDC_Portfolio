@@ -73,6 +73,13 @@ body {
   background-image: linear-gradient(#444444 ,#666666) ;
 }
 
+.navbar code{
+  color: rgb(213, 16, 16);
+  position: absolute;
+  right: 5%;
+  width: 200px;
+}
+
 .main-container{
   padding-bottom: 70px;
 }
@@ -138,6 +145,7 @@ body {
   right: 1%;
   /* margin-right: 1vw; */
   width: 40%;
+  max-width: 600px;
   min-width: 500px;
   opacity: 75%;
 }
@@ -214,10 +222,12 @@ h2{
   min-height: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-me a{
   width: 25%;
+  min-width: 250px;
 }
 
 .about-me button{
@@ -248,6 +258,15 @@ h2{
   transform: translateY(2px);
 }
 
+.about-me .right{
+  position: absolute;
+  right: 1%;
+  margin-top: 10px;
+  margin-right: 5%;
+  
+  max-width: 750px;
+}
+
 
 
 .left img{
@@ -265,16 +284,15 @@ h2{
 }
 
 .capsule-l{
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
-  min-height: 20px;
-  max-height: 20px;
-  min-width: 20px;
+  height: 30px;
+  min-width: 150px;
   max-width: 350px;
   padding: 10px;
-  margin: 40px;
   background-image: linear-gradient(to bottom right, #343434, #1e1e1e);
   border: 2px solid #edf2f4;
   border-radius: 1000px;
@@ -287,13 +305,13 @@ p{
 }
 
 .capsule-r{
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
-  min-height: 20px;
-  max-height: 20px;
-  min-width: 20px;
+  height: 30px;
+  min-width: 150px;
   max-width: 350px;
   padding: 10px;
   margin: 40px;
@@ -482,6 +500,47 @@ label{
 
 .carousel-dot.active{
   color: white;
+}
+
+.carousel .full{
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel a{
+  width: 25%;
+  min-width: 250px;
+}
+
+.carousel a button{
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  height: 50px;
+  width: 100%;
+  border-radius: 1000000px;
+  border: 1px solid rgb(133, 133, 133);
+  background-image: linear-gradient(to bottom right, #343434, #1e1e1e);
+}
+
+.carousel button:hover{
+  cursor: pointer;
+  color: white;
+  border: 1px outset rgb(184, 184, 184);
+  background-image: linear-gradient(to bottom right, #494949, #292929);
+  box-shadow: 2px 2px 5px #6c6c6c;
+}
+
+.carousel button:active{
+  cursor: pointer;
+  color: white;
+  border: 1px inset rgb(184, 184, 184);
+  background-image: linear-gradient(to bottom right, #292929, #494949,);
+  box-shadow: 0px 0px 5px #6c6c6c;
+  transform: translateY(2px);
 }
 
 /* Footer */

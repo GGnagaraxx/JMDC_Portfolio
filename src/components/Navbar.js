@@ -31,6 +31,7 @@ export default function Navbar(){
                     Contact
                 </Link>
             </div>
+            <code>This website is currently under development</code>
         </div>
     );
 }
