@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/JMDC_Portfolio/static/css/main.f5a03cc0.css",
-    "main.js": "/JMDC_Portfolio/static/js/main.911b707a.js",
+    "main.css": "/JMDC_Portfolio/static/css/main.227feef0.css",
+    "main.js": "/JMDC_Portfolio/static/js/main.5272deb2.js",
+    "static/media/Creative_Shot.jpg": "/JMDC_Portfolio/static/media/Creative_Shot.c73ccee380b463ea8057.jpg",
     "static/media/CodeBackground.jpg": "/JMDC_Portfolio/static/media/CodeBackground.78e70ddb9753fce7c016.jpg",
     "static/media/Formal.png": "/JMDC_Portfolio/static/media/Formal.bd1038d7d0ad20e03b8f.png",
     "static/media/GioDev_Logo.png": "/JMDC_Portfolio/static/media/GioDev_Logo.c36ad29e1b28ed7c1865.png",
     "static/media/sample_1080_1920.jpg": "/JMDC_Portfolio/static/media/sample_1080_1920.69df3929c887fc6c79d2.jpg",
+    "static/media/Prowchart_SS3.png": "/JMDC_Portfolio/static/media/Prowchart_SS3.f75b6a4a248cd505f6a0.png",
+    "static/media/Prowchart_SS2.png": "/JMDC_Portfolio/static/media/Prowchart_SS2.2db3584d0ef89f5cf5b9.png",
+    "static/media/Prowchart_SS1.png": "/JMDC_Portfolio/static/media/Prowchart_SS1.e695b84437aeb6c23589.png",
     "index.html": "/JMDC_Portfolio/index.html",
-    "main.f5a03cc0.css.map": "/JMDC_Portfolio/static/css/main.f5a03cc0.css.map",
-    "main.911b707a.js.map": "/JMDC_Portfolio/static/js/main.911b707a.js.map"
+    "main.227feef0.css.map": "/JMDC_Portfolio/static/css/main.227feef0.css.map",
+    "main.5272deb2.js.map": "/JMDC_Portfolio/static/js/main.5272deb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5a03cc0.css",
-    "static/js/main.911b707a.js"
+    "static/css/main.227feef0.css",
+    "static/js/main.5272deb2.js"
   ]
 }
