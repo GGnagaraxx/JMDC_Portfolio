@@ -1,0 +1,193 @@
+.about .top .full{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.about .page-title{
+    display: block;
+    margin-left: 5%;
+}
+
+.about .quote{
+    display: block;
+    margin-left: 5%;
+}
+
+.about .container{
+    width: 90%;
+    /* min-width: 700px; */
+    padding: 3% 5%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.about .left{
+    width: 50%;
+    min-width: none;
+    float: left;
+}
+
+.about .right{
+    width: 50%;
+    min-width: none;
+    float: right;
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.personal-info .full{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.personal-info .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.personal-info .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.personal-info .left h2{
+    flex: 100%;
+}
+
+.personal-info .left .card p{
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.personal-info .right img{
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: -2px -2px 5px #5c5c5c, 2px 2px 5px #000000;
+}
+
+.personal-info code{
+    margin-top: 10px;
+    font-style: italic;
+    display: block;
+    font-size: 1rem;
+}
+
+.i-love, .i-hate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-love h2, .i-hate h2{
+    width: 40%;
+    text-align: center;
+}
+
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.subcontainer .card{
+    width: 80%;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 0;;
+    box-shadow: 5px 5px 5px #868a8b;
+}
+
+.subcontainer h3{
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.subcontainer .card img{
+    width: 50%;
+}
+
+.strs-wkns{
+    display: block;
+}
+
+.strs-wkns .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    float: none;
+    padding: 10px;
+}
+
+.strs-wkns .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    float: none;
+    margin-left: auto;
+}
+
+.strs-wkns .capsule{
+    width: 100%;
+    max-height: 40px;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 650px) {
+
+    .personal-info .full{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .personal-info .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        min-height: 200px;
+    }
+
+    .personal-info .right img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .i-love, .i-hate{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subcontainer{
+        width: 80%;
+    }
+}

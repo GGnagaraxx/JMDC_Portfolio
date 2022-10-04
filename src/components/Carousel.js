@@ -1,10 +1,17 @@
 import {useState, useEffect} from 'react';
-import {projects} from './Projects';
 import { Link } from 'react-router-dom';
+import ProjectModal from './ProjectModal';
 
-export default function Carousel(){
+export default function Carousel({
+    list,
+    dispTitle,
+    dispButton,
+    handleOpenModal,
+}){
 
-    const items = [...projects]
+    console.log("List: ", list)
+
+    const items = [...list]
     const [currentItem, setCurrentItem] = useState({
         ...items[0],
         index: 0
@@ -43,15 +50,21 @@ export default function Carousel(){
         setCurrentItem(newCurrentItem);
     }
 
+    function handleModal(){
+        handleOpenModal(true, currentItem);
+    }
+
     return(
         <div className="carousel">
-            <h2 className="carousel-title">{currentItem.title}</h2>
+            {dispTitle ?
+                <h2 className="carousel-title">{currentItem.title}</h2>
+                : null}
             <div className="carousel-main">
                 <button 
                     className="btn-left" 
                     name="prev"
                     onClick={handleControls}> &#60; </button>
-                <img src={currentItem.img} alt=""/>
+                <img src={currentItem.imgs[0]} alt=""/>
                 <button 
                     className="btn-right" 
                     name="next"
@@ -68,11 +81,17 @@ export default function Carousel(){
                     })
                 }
             </div>
-            <div className="full">
-                <Link to={"/projects/"+currentItem.id}>
-                    <button>More Info</button>
-                </Link>
-            </div>
+            {dispButton && handleOpenModal != null ? 
+                <div className="full">
+                    <button className="carousel-btn" onClick={handleModal}>More Info</button>
+                </div>
+            : null}
+            {/* {openModal ?
+                <ProjectModal
+                    modalDetails={currentItem}
+                    handleClose={handleCloseModal}
+                />
+            : null} */}
         </div>
     )
 }
