@@ -1,42 +1,46 @@
-import {useState} from 'react'
+import {useRef} from 'react'
+import emailjs from '@emailjs/browser';
 
 
 export default function ContactMe(){
 
-    const [contactInfo, setContactInfo] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
+    const form = useRef();
 
-    function handleChange(e){
-        let newValue = {...contactInfo}
-        newValue[e.target.name] = e.target.value
-        setContactInfo(newValue)
-    }
-
-    function handleSubmit(e){
-        e.preventDefault()
-        console.log(contactInfo)
-        console.log(window.confirm("Send Email?"))
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        let resp = window.confirm("Send Email to giodelacruz05@gmail.com?")
+        if(!resp) return;
+        
+        emailjs.sendForm(
+            'service_ykofjwp', 
+            'template_19fsk6f', 
+            form.current, 
+            '0f9s3DCFcPOmlPeqQ')
+            .then((result) => {
+                window.alert("Email Sent Successfully");
+                e.target.reset()
+            }, (error) => {
+                window.alert("Error:", error.text);
+                console.log(error.text);
+            });
+    };
+  
 
     return(
         <section>
         <div className="container">
             <h2>Contact Me</h2>
             <div className="full center-content">
-                <form className="card contact-me" id="contact-form">
+                <form className="card contact-me" id="contact-form" ref={form} onSubmit={sendEmail}>
                     <div className="input-container center">
                         <label htmlFor="email-input">Name</label>
                         <input 
                             type="text" 
                             className="txt-input center" 
                             id="email-input"
-                            name="name"
-                            placeholder="Enter your name"
-                            value={contactInfo.name}
-                            onChange={handleChange}/>
+                            name="user_name"
+                            placeholder="Enter your name"/>
                     </div>
                     <div className="input-container center">
                         <label htmlFor="email-input">Email</label>
@@ -44,29 +48,24 @@ export default function ContactMe(){
                             type="text" 
                             className="txt-input center" 
                             id="email-input" 
-                            name="email"
-                            placeholder="Enter your email"
-                            value={contactInfo.email}
-                            onChange={handleChange}/>
+                            name="user_email"
+                            placeholder="Enter your email"/>
                     </div>
 
                     <div className="input-container center">
                         <label htmlFor="message-input">Message</label>
-                        <textarea 
-                            form="contact-form center" 
+                        <textarea
                             className="txt-area" 
                             id="message-input" 
                             name="message"
-                            placeholder="Type your message here..."
-                            value={contactInfo.message}
-                            onChange={handleChange}/>
+                            placeholder="Type your message here..."/>
                     </div>
 
                     <button 
-                        className="button center" 
-                        onClick={handleSubmit}>
+                        type='submit'
+                        className='button'>
                             Submit
-                        </button>
+                    </button>
                 </form>
             </div>
         </div>

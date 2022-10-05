@@ -9,8 +9,6 @@ export default function Carousel({
     handleOpenModal,
 }){
 
-    console.log("List: ", list)
-
     const items = [...list]
     const [currentItem, setCurrentItem] = useState({
         ...items[0],

@@ -4,11 +4,9 @@ import Carousel from "./Carousel";
 
 export default function ProjectModal({modalDetails, handleClose}){
 
-    console.log("rendered", modalDetails)
     const [imgList, setImgList] = useState(getList())
 
     function getList(){
-        console.log("modalDetails: ", modalDetails)
 
         let newList = []
         modalDetails.imgs.forEach(img => {
@@ -21,7 +19,6 @@ export default function ProjectModal({modalDetails, handleClose}){
     }
 
     useEffect(() => {
-        console.log("modalDetails: ", modalDetails)
         setImgList(getList());
     }, [modalDetails])
     
@@ -39,6 +36,7 @@ export default function ProjectModal({modalDetails, handleClose}){
                 </div>
                 <div className="modal-body">
                     <h1 className="modal-title">{modalDetails.title}</h1>
+                    <hr/>
                     <Carousel
                         list={imgList}
                         dispTitle={false}
